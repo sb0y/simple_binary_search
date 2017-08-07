@@ -27,9 +27,11 @@ T binary_search( const std::vector< T > &list, T item )
  return 0;
 }
 
-int main()
+int main( int, char** )
 {
     std::vector< char > list{ 'a', 'b', 'c', 'd' };
     std::sort( list.begin(), list.end() );
     std::cout << binary_search( list, 'c' ) << std::endl;
+    
+    return 0;
 }
